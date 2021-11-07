@@ -4,7 +4,7 @@ const swiper = new Swiper('.hero__swiper-body', {
         el: '.hero__swiper-pagination',
         clickable: true,
     },
-    // autoplay: {
-    //     delay: 5000,
-    // },
+    autoplay: {
+        delay: 15000,
+    },
 });
