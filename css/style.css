@@ -216,7 +216,7 @@
       .menu {
           margin: unset;
       }
-      .header__menu>.menu__item:not(:last-child) {
+      .header__menu .menu__item:not(:last-child) {
           display: none;
       }
       .header__burger {
