@@ -106,7 +106,7 @@
       padding: 14px 0px;
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
       .header {
           box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
       }
@@ -188,7 +188,7 @@
       }
   }
   
-  @media (max-width: 450px) {
+  @media (max-width: 600px) {
       .header__logo picture:not(:last-child) {
           margin-right: 6px;
       }
@@ -394,7 +394,7 @@
       }
   }
   
-  @media (max-width:450px) {
+  @media (max-width:600px) {
       .hero__swiper-slide1 {
           background: url(../img/hero/adaptive/slide-320.jpg) 0 0/cover no-repeat;
       }
@@ -517,7 +517,7 @@
       }
   }
   
-  @media (max-width:450px) {
+  @media (max-width:600px) {
       .hero__container {
           min-height: 308px;
       }
@@ -574,11 +574,9 @@
   .about__body {
       display: flex;
       padding: 47px 0px 0px 0px;
-      margin: 0px 0px 100px 0px;
   }
   
   .about__column {
-      min-height: 622px;
       flex: 1;
       position: relative;
   }
@@ -591,6 +589,7 @@
   }
   
   .about__column:not(:last-child) {
+      min-height: 622px;
       margin: 0px 32px 0px 0px;
   }
   
@@ -710,7 +709,7 @@
       .about__body {
           flex-direction: column;
       }
-      .how__title {
+      .header-about__title {
           margin-bottom: 7px;
       }
       .header-about__text {
@@ -726,9 +725,16 @@
       .card__body {
           padding: 63px 20px 65px 315px;
       }
+      .card__body::before,
+      .card__body::after {
+          left: 76px;
+      }
   }
   
   @media (max-width:800px) {
+      .header-about__title {
+          margin-bottom: 8px;
+      }
       .about__column:not(:last-child) {
           min-height: 649px;
       }
@@ -753,7 +759,7 @@
   }
   
   @media (max-width:600px) {
-      .how__title {
+      .header-about__title {
           margin-bottom: 20px;
       }
       .title {
@@ -787,11 +793,11 @@
           color: var(--mine-shafts);
       }
       .card:not(:last-child) {
-          margin-bottom: 34px;
+          margin-bottom: 44px;
       }
       .card__body {
           border: none;
-          padding: 50px 0px 10px 0px;
+          padding: 50px 0px 0px 0px;
       }
       .medium-title {
           font-weight: 500;
@@ -854,9 +860,7 @@
       margin-right: 85px;
   }
   
-  .tabs__body {
-      margin: 0px 0px 100px 0px;
-  }
+  .tabs__body {}
   
   .tabs__content:not(:first-child) {
       display: none;
@@ -946,11 +950,8 @@
   }
   
   @media (max-width:1400px) {
-      .header-about__title {
-          margin-bottom: 50px;
-      }
       .tabs__items {
-          margin: 0px 0px 48px 0px;
+          margin: 0px 0px 47px 0px;
       }
       .tabs__content>* {
           width: 47.3%;
@@ -966,14 +967,11 @@
           margin-bottom: 8px;
       }
       .tabs__text {
-          margin-bottom: 22px;
+          margin-bottom: 24px;
       }
   }
   
   @media (max-width:800px) {
-      .header-about__title {
-          margin-bottom: 48px;
-      }
       .tabs__items {
           justify-content: space-between;
       }
@@ -1000,8 +998,8 @@
   }
   
   @media (max-width:600px) {
-      .header-about__title {
-          margin-bottom: 22px;
+      .how__header {
+          margin: 0px 0px 22px 0px;
       }
       .tabs__items {
           margin: 0px 0px 15px 0px;
@@ -1159,9 +1157,6 @@
           width: 86%;
           line-height: 160%;
       }
-      .spoiler__title br {
-          display: block;
-      }
       .spoiler__item:nth-child(n+2) .spoiler__title {
           padding: 30px 0px;
       }
@@ -1169,12 +1164,15 @@
   
   @media (max-width:600px) {
       .questions__title {
-          margin-bottom: 16px;
+          margin-bottom: 15px;
       }
       .spoiler__title {
           width: 85%;
           font-size: 14px;
           line-height: 171%;
+      }
+      .spoiler__title br {
+          display: block;
       }
       .spoiler__item:nth-child(odd) .spoiler__title,
       .spoiler__item:nth-child(even) .spoiler__title {
@@ -1412,7 +1410,7 @@
       }
       .form__input,
       textarea.form__input {
-          width: 78%;
+          width: 81%;
       }
       .form__btn-row {
           padding: 7px 0px 0px 0px;
