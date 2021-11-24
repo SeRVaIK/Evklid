@@ -118,4 +118,5 @@ document.addEventListener('click', (e) => {
         input.value = "";
         input.focus();
     }
+    e.preventDefault();
 });
