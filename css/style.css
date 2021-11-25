@@ -1313,14 +1313,6 @@
       transform: rotate(-90deg);
   }
 
-  .spoiler__item._active_spoiler .spoiler__button span::before {
-      transform: rotate(-45deg);
-  }
-
-  .spoiler__item._active_spoiler .spoiler__button span::after {
-      transform: rotate(45deg);
-  }
-
   .spoiler__title._active_spoiler .spoiler__title {
       padding: 40px 0px 29px 0px;
   }
@@ -1345,6 +1337,14 @@
   .spoiler__item:hover:not(._active_spoiler) .spoiler__button,
   .spoiler__item:focus-visible:not(._active_spoiler) .spoiler__button {
       background: var(--orange-peel);
+  }
+
+  .spoiler__item._active_spoiler .spoiler__button {
+      transform: rotate(-45deg);
+  }
+
+  .spoiler__item._active_spoiler .spoiler__button {
+      transform: rotate(45deg);
   }
 
   .spoiler__text {
